@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPFAsyncChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAsyncChat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Center" Margin="0,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="47" IsReadOnly="True" x:Name="MyLastMessageText"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" Height="47" IsReadOnly="True" x:Name="BotLastMessageText" Text="Для начала общения напишите /start"/>
+        <TextBox HorizontalAlignment="Left" Margin="214,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Height="47" x:Name="MyCurrentMessageText"/>
+        <Button HorizontalAlignment="Left" Margin="458,340,0,0" VerticalAlignment="Top" Height="47" Width="146" x:Name="SendMessageBtn" Click="SendMessageBtn_Click">
+            <Label>Отправить</Label>
+        </Button>
+        <Label Content="Ваше последнее сообщение:" HorizontalAlignment="Left" Margin="290,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Последнее сообщение бота:" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
